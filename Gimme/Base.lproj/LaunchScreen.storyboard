@@ -16,7 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logotypeSvgGIMME" translatesAutoresizingMaskIntoConstraints="NO" id="n0T-35-dGc">
+                                <rect key="frame" x="190" y="249" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="OWU-3c-tHT"/>
+                                    <constraint firstAttribute="height" constant="137" id="x8a-3x-yW4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="n0T-35-dGc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Hzu-B8-HLy"/>
+                            <constraint firstItem="n0T-35-dGc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PLx-Ek-oyC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logotypeSvgGIMME" width="105" height="138"/>
+    </resources>
 </document>

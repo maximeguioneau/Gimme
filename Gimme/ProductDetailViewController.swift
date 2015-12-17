@@ -57,6 +57,7 @@ class ProductDetailViewController: UIViewController {
         sellerProductLabel.text = product.seller
         purchaseProductLabel.text = product.purchaseUrl
         priceProductLabel.text = "\(product.price)€"
+        descriptionProductLabel.text = product.info
         
         likeProductButton.setTitle("\(product.like)", forState: .Normal)
         

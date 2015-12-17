@@ -27,8 +27,6 @@ class ProductService: NSObject {
                 
                 let products = Product.productsFromJson(value)
                 
-                print(products)
-                
                 resultCallback(products: products)
                 
                 break

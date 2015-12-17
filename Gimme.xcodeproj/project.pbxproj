@@ -22,6 +22,7 @@
 		9C4CE1AB1C22170F00B595FA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4CE1AA1C22170F00B595FA /* SearchViewController.swift */; };
 		9C4CE1AE1C22417400B595FA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4CE1AC1C22417400B595FA /* OpenSans-Regular.ttf */; };
 		9C4CE1AF1C22417400B595FA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4CE1AD1C22417400B595FA /* OpenSans-Semibold.ttf */; };
+		9C7EB9191C22EA15006AED2E /* SingleCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7EB9181C22EA15006AED2E /* SingleCategoryViewController.swift */; };
 		9CBB8E301C200DB900A88464 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB8E2F1C200DB900A88464 /* ProfileViewController.swift */; };
 		9CBB8E321C20115E00A88464 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB8E311C20115E00A88464 /* Product.swift */; };
 		D90CED5E4586427ED4C3F314 /* Pods_Gimme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BFAA8BDD94259D21B3653A /* Pods_Gimme.framework */; };
@@ -69,6 +70,7 @@
 		9C4CE1AA1C22170F00B595FA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9C4CE1AC1C22417400B595FA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		9C4CE1AD1C22417400B595FA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		9C7EB9181C22EA15006AED2E /* SingleCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCategoryViewController.swift; sourceTree = "<group>"; };
 		9CBB8E2F1C200DB900A88464 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9CBB8E311C20115E00A88464 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9CBB8E331C20169900A88464 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				9C0A60881C1F156000A890C5 /* PopularViewController.swift */,
 				9C0A608A1C1F156000A890C5 /* RecentViewController.swift */,
 				9C3FB51E1C2018F6005055F6 /* CategoriesViewController.swift */,
+				9C7EB9181C22EA15006AED2E /* SingleCategoryViewController.swift */,
 				9CBB8E2F1C200DB900A88464 /* ProfileViewController.swift */,
 				9C4CE1AA1C22170F00B595FA /* SearchViewController.swift */,
 				9C3FB5261C20BD3E005055F6 /* ProductDetailViewController.swift */,
@@ -375,6 +378,7 @@
 				9C3FB51F1C2018F6005055F6 /* CategoriesViewController.swift in Sources */,
 				9C0A60871C1F156000A890C5 /* AppDelegate.swift in Sources */,
 				9C0A60891C1F156000A890C5 /* PopularViewController.swift in Sources */,
+				9C7EB9191C22EA15006AED2E /* SingleCategoryViewController.swift in Sources */,
 				9C3FB5231C201E0B005055F6 /* ProductService.swift in Sources */,
 				9CBB8E321C20115E00A88464 /* Product.swift in Sources */,
 			);

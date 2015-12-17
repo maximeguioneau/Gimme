@@ -110,8 +110,7 @@ class SearchViewController: UIViewController {
         
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int
-    {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     

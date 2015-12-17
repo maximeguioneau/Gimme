@@ -29,7 +29,7 @@ class ProductTableViewCell: UITableViewCell {
             
             Alamofire.request(.GET, product.imageUrl).response() {
                 (_, _, data, _) in
-                let image = UIImage(data: data! as! NSData)
+                let image = UIImage(data: data!)
                 self.backgroundProductImage.image = image
             }
         }
