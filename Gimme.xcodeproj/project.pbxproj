@@ -73,7 +73,7 @@
 		9C7EB9181C22EA15006AED2E /* SingleCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCategoryViewController.swift; sourceTree = "<group>"; };
 		9CBB8E2F1C200DB900A88464 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9CBB8E311C20115E00A88464 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		9CBB8E331C20169900A88464 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9CBB8E331C20169900A88464 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CCD1A967EC5AAAD02766912F /* Pods-Gimme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gimme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gimme/Pods-Gimme.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

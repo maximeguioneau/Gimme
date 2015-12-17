@@ -175,7 +175,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CTE-5C-e4N"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wVP-Oc-BD7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ab-fH-NhM">
@@ -315,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gG-nF-B0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3206" y="-1006"/>
+            <point key="canvasLocation" x="3202" y="-1006"/>
         </scene>
         <!--Popular-->
         <scene sceneID="wg7-f3-ORb">
@@ -700,6 +700,7 @@
                                             <outlet property="likeProductButton" destination="Y2p-5v-xyK" id="0V5-Vr-4bR"/>
                                             <outlet property="nameProductLabel" destination="SER-M7-bQb" id="r7d-Xi-QdL"/>
                                             <outlet property="sellerProductLabel" destination="jBp-vi-6Vz" id="ogq-aJ-4ZV"/>
+                                            <segue destination="zcw-Sj-8Qs" kind="showDetail" identifier="product_detail_identifier" action="showViewController:sender:" id="qW6-pK-lHm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -894,7 +895,7 @@
         <image name="shape" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0b6-vf-p9b"/>
-        <segue reference="m1C-yR-JPK"/>
+        <segue reference="qHo-xm-TzM"/>
+        <segue reference="qW6-pK-lHm"/>
     </inferredMetricsTieBreakers>
 </document>

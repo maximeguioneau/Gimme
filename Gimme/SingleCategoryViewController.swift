@@ -38,11 +38,12 @@ class SingleCategoryViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        self.navigationController!.navigationBar.translucent = false
         self.navigationController?.navigationBar.tintColor = UIColor(red: 254.0/255, green: 40.0/255, blue: 81.0/255, alpha: 1.0)
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.navigationController!.navigationBar.topItem!.title = categorySelected;
+        self.navigationController!.navigationBar.topItem!.title = categorySelected.capitalizedString;
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -57,7 +58,6 @@ class SingleCategoryViewController: UIViewController {
                 if let indexPathForSelectedRow = productsTableView.indexPathForSelectedRow {
                     let product = allProducts[indexPathForSelectedRow.row]
                     productDetailViewController.product = product
-                    
                     
                     productsTableView.deselectRowAtIndexPath(indexPathForSelectedRow, animated: true)
                 }
