@@ -48,6 +48,7 @@ class CategoriesViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        self.navigationController!.navigationBar.translucent = false
         self.navigationController!.navigationBar.topItem!.title = "Categories";
     }
     
