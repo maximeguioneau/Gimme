@@ -30,6 +30,9 @@ class SearchViewController: UIViewController {
         }
         
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "OpenSans-Semibold", size: 15)!]
+        
+        self.productsTableView.rowHeight = 70.0
+        self.searchDisplayController!.searchResultsTableView.rowHeight = 70.0
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
@@ -60,6 +63,7 @@ class SearchViewController: UIViewController {
         } else {
             searchActive = true;
         }
+        
         self.productsTableView.reloadData()
     }
     
