@@ -18,12 +18,13 @@ class Product: NSObject {
     var purchaseUrl:String!
     var categories:Array<String>!
     var like:Int!
+    var info:String!
     
     override init() {
         
     }
     
-    init(name:String, seller:String, price:Int, imageUrl:String, purchaseUrl:String, categories:Array<String>, like:Int) {
+    init(name:String, seller:String, price:Int, imageUrl:String, purchaseUrl:String, categories:Array<String>, like:Int, info:String) {
         self.name = name
         self.seller = seller
         self.price = price
@@ -31,6 +32,7 @@ class Product: NSObject {
         self.purchaseUrl = purchaseUrl
         self.categories = categories
         self.like = like
+        self.info = info
     }
 }
 
@@ -43,13 +45,10 @@ extension Product {
         self.price = json["price"].int ?? 0
         self.imageUrl = json["item_url"].string ?? ""
         self.purchaseUrl = json["purchase_url"].string ?? ""
-        self.price = json["price"].int ?? 0
+        self.like = json["like"].int ?? 0
+        self.info = json["description"].string ?? ""
         
-        if let categoryResults = json["categories"].array{
-            for categoryResult in categoryResults {
-                self.categories.append(categoryResult.string ?? "")
-            }
-        }
+        self.categories = json["category"].arrayValue.map { $0.string!}
         
     }
     
@@ -59,7 +58,7 @@ extension Product {
         
         let jsonObject = JSON(json)
         
-        if let productResults = jsonObject["results"].array {
+        if let productResults = jsonObject.array {
             for productResult in productResults {
                 products.append(Product(json: productResult))
             }

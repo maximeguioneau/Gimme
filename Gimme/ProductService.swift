@@ -14,11 +14,11 @@ class ProductService: NSObject {
     typealias ResultProduct = (products:[Product]) -> Void
     typealias FailureHandler = (error:NSError) -> Void
     
-    private static let urlSearchProducts = "http://api.themoviedb.org/3/search/movie?api_key=c1ac741d5dd740f9861e794c5363b0c2&query="
+    private static let urlSearchProducts = "http://jaiye.com/DONOTTOUCH.json"
     
-    static func searchProducts(title:String, resultCallback:ResultProduct, errorCallback:FailureHandler) {
+    static func searchProducts(resultCallback:ResultProduct, errorCallback:FailureHandler) {
         
-        let url = urlSearchProducts+title.stringByAddingPercentEscapesUsingEncoding(NSASCIIStringEncoding)!
+        let url = urlSearchProducts.stringByAddingPercentEscapesUsingEncoding(NSASCIIStringEncoding)!
         
         Alamofire.request(.GET, url).responseJSON { (response) -> Void in
             
@@ -26,6 +26,9 @@ class ProductService: NSObject {
             case .Success(let value):
                 
                 let products = Product.productsFromJson(value)
+                
+                print(products)
+                
                 resultCallback(products: products)
                 
                 break

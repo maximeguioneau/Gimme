@@ -17,7 +17,12 @@
 		9C0A60A91C1F156000A890C5 /* GimmeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A60A81C1F156000A890C5 /* GimmeUITests.swift */; };
 		9C3FB51F1C2018F6005055F6 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FB51E1C2018F6005055F6 /* CategoriesViewController.swift */; };
 		9C3FB5231C201E0B005055F6 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FB5221C201E0B005055F6 /* ProductService.swift */; };
-		9CBB8E301C200DB900A88464 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB8E2F1C200DB900A88464 /* ProfilViewController.swift */; };
+		9C3FB5251C20564D005055F6 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FB5241C20564D005055F6 /* ProductTableViewCell.swift */; };
+		9C3FB5271C20BD3E005055F6 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FB5261C20BD3E005055F6 /* ProductDetailViewController.swift */; };
+		9C4CE1AB1C22170F00B595FA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4CE1AA1C22170F00B595FA /* SearchViewController.swift */; };
+		9C4CE1AE1C22417400B595FA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4CE1AC1C22417400B595FA /* OpenSans-Regular.ttf */; };
+		9C4CE1AF1C22417400B595FA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4CE1AD1C22417400B595FA /* OpenSans-Semibold.ttf */; };
+		9CBB8E301C200DB900A88464 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB8E2F1C200DB900A88464 /* ProfileViewController.swift */; };
 		9CBB8E321C20115E00A88464 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB8E311C20115E00A88464 /* Product.swift */; };
 		D90CED5E4586427ED4C3F314 /* Pods_Gimme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BFAA8BDD94259D21B3653A /* Pods_Gimme.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +64,12 @@
 		9C3FB51E1C2018F6005055F6 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		9C3FB5201C201B32005055F6 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Pods/Alamofire/Source/Alamofire.swift; sourceTree = "<group>"; };
 		9C3FB5221C201E0B005055F6 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
-		9CBB8E2F1C200DB900A88464 /* ProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		9C3FB5241C20564D005055F6 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		9C3FB5261C20BD3E005055F6 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		9C4CE1AA1C22170F00B595FA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9C4CE1AC1C22417400B595FA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		9C4CE1AD1C22417400B595FA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		9CBB8E2F1C200DB900A88464 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9CBB8E311C20115E00A88464 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9CBB8E331C20169900A88464 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CCD1A967EC5AAAD02766912F /* Pods-Gimme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gimme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gimme/Pods-Gimme.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,16 +145,21 @@
 		9C0A60851C1F156000A890C5 /* Gimme */ = {
 			isa = PBXGroup;
 			children = (
+				9C4CE1AC1C22417400B595FA /* OpenSans-Regular.ttf */,
+				9C4CE1AD1C22417400B595FA /* OpenSans-Semibold.ttf */,
 				9C0A60861C1F156000A890C5 /* AppDelegate.swift */,
 				9C0A60881C1F156000A890C5 /* PopularViewController.swift */,
 				9C0A608A1C1F156000A890C5 /* RecentViewController.swift */,
 				9C3FB51E1C2018F6005055F6 /* CategoriesViewController.swift */,
-				9CBB8E2F1C200DB900A88464 /* ProfilViewController.swift */,
+				9CBB8E2F1C200DB900A88464 /* ProfileViewController.swift */,
+				9C4CE1AA1C22170F00B595FA /* SearchViewController.swift */,
+				9C3FB5261C20BD3E005055F6 /* ProductDetailViewController.swift */,
 				9C0A608C1C1F156000A890C5 /* Main.storyboard */,
 				9C0A608F1C1F156000A890C5 /* Assets.xcassets */,
 				9C0A60911C1F156000A890C5 /* LaunchScreen.storyboard */,
 				9C0A60941C1F156000A890C5 /* Info.plist */,
 				9CBB8E311C20115E00A88464 /* Product.swift */,
+				9C3FB5241C20564D005055F6 /* ProductTableViewCell.swift */,
 				9C3FB5221C201E0B005055F6 /* ProductService.swift */,
 			);
 			path = Gimme;
@@ -277,7 +292,9 @@
 			files = (
 				9C0A60931C1F156000A890C5 /* LaunchScreen.storyboard in Resources */,
 				9C0A60901C1F156000A890C5 /* Assets.xcassets in Resources */,
+				9C4CE1AE1C22417400B595FA /* OpenSans-Regular.ttf in Resources */,
 				9C0A608E1C1F156000A890C5 /* Main.storyboard in Resources */,
+				9C4CE1AF1C22417400B595FA /* OpenSans-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +367,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4CE1AB1C22170F00B595FA /* SearchViewController.swift in Sources */,
 				9C0A608B1C1F156000A890C5 /* RecentViewController.swift in Sources */,
-				9CBB8E301C200DB900A88464 /* ProfilViewController.swift in Sources */,
+				9C3FB5251C20564D005055F6 /* ProductTableViewCell.swift in Sources */,
+				9C3FB5271C20BD3E005055F6 /* ProductDetailViewController.swift in Sources */,
+				9CBB8E301C200DB900A88464 /* ProfileViewController.swift in Sources */,
 				9C3FB51F1C2018F6005055F6 /* CategoriesViewController.swift in Sources */,
 				9C0A60871C1F156000A890C5 /* AppDelegate.swift in Sources */,
 				9C0A60891C1F156000A890C5 /* PopularViewController.swift in Sources */,
