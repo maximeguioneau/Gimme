@@ -26,6 +26,10 @@ class CategoriesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController!.navigationBar.topItem!.title = "Categories";
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "single_category_identifier" {
             if let destination = segue.destinationViewController as? SingleCategoryViewController {

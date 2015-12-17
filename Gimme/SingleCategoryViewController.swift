@@ -41,6 +41,10 @@ class SingleCategoryViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor(red: 254.0/255, green: 40.0/255, blue: 81.0/255, alpha: 1.0)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController!.navigationBar.topItem!.title = categorySelected;
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if let segueIdentifier = segue.identifier {
