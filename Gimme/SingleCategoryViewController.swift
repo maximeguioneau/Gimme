@@ -56,7 +56,7 @@ class SingleCategoryViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.navigationController!.navigationBar.topItem!.title = categorySelected.capitalizedString;
+        self.navigationController!.navigationBar.topItem!.title = categorySelected.uppercaseString;
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

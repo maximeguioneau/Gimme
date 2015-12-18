@@ -49,7 +49,7 @@ class CategoriesViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController!.navigationBar.translucent = false
-        self.navigationController!.navigationBar.topItem!.title = "Categories";
+        self.navigationController!.navigationBar.topItem!.title = "CATEGORIES";
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
