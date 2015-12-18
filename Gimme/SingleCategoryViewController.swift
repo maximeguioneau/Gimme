@@ -69,7 +69,7 @@ class SingleCategoryViewController: UIViewController {
                 let productDetailViewController = segue.destinationViewController as! ProductDetailViewController
                 
                 if let indexPathForSelectedRow = productsTableView.indexPathForSelectedRow {
-                    let product = allProducts[indexPathForSelectedRow.row]
+                    let product = filteredProducts[indexPathForSelectedRow.row]
                     productDetailViewController.product = product
                     
                     productsTableView.deselectRowAtIndexPath(indexPathForSelectedRow, animated: true)
