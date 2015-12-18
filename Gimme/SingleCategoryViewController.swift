@@ -11,6 +11,7 @@ import UIKit
 class SingleCategoryViewController: UIViewController {
     
     var categorySelected : String = ""
+    var categoryBool : Bool = false
     private lazy var allProducts = [Product]()
     private lazy var filteredProducts = [Product]()
     
@@ -23,7 +24,19 @@ class SingleCategoryViewController: UIViewController {
         ProductService.searchProducts({ (products) -> Void in
             self.allProducts.removeAll()
             self.allProducts+=products
-            //self.filteredProducts = allProducts.filter { !contains(categorySelected, $0.categories) }
+            self.filteredProducts.removeAll()
+            
+            for singleProduct in self.allProducts{
+                for category in singleProduct.categories{
+                    if(category == self.categorySelected){
+                        self.categoryBool = true
+                    }
+                }
+                if(self.categoryBool){
+                    self.filteredProducts.append(singleProduct)
+                    self.categoryBool = false
+                }
+            }
             
             self.productsTableView.reloadData()
             }) { (error) -> Void in
@@ -74,7 +87,7 @@ class SingleCategoryViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allProducts.count
+        return filteredProducts.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -82,7 +95,7 @@ class SingleCategoryViewController: UIViewController {
         //Création ou récupération d'une cellule depuis le cache
         let cell = tableView.dequeueReusableCellWithIdentifier(ProductTableViewCell.identifier, forIndexPath: indexPath) as! ProductTableViewCell
         
-        cell.product = allProducts[indexPath.row]
+        cell.product = filteredProducts[indexPath.row]
         
         return cell
     }
